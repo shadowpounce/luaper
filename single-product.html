@@ -1,0 +1,1632 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/src/styles/index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- product media swiper modal -->
+    <div class="overlay" id="product-media-modal-overlay"></div>
+    <div id="product-media-modal" class="modal product-media-modal">
+      <div class="modal-head">
+        <p class="label"></p>
+        <div class="cross-button"></div>
+      </div>
+      <div class="modal-body">
+        <div class="product-media-modal-content">
+          <button id="product-media-swiper-left" class="btn-arrow">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M15.0508 19.9201L8.53078 13.4001C7.76078 12.6301 7.76078 11.3701 8.53078 10.6001L15.0508 4.08008"
+                stroke="#7962EE"
+                stroke-width="2"
+                stroke-miterlimit="10"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </button>
+          <div class="product-media-modal-content-swiper swiper">
+            <div class="swiper-wrapper">
+              <img src="/public/products/1.png" alt="" class="swiper-slide" />
+              <img src="/public/products/2.png" alt="" class="swiper-slide" />
+              <img src="/public/products/3.png" alt="" class="swiper-slide" />
+              <img src="/public/products/4.png" alt="" class="swiper-slide" />
+            </div>
+          </div>
+          <button class="btn-arrow" id="product-media-swiper-right">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M8.94922 4.07992L15.4692 10.5999C16.2392 11.3699 16.2392 12.6299 15.4692 13.3999L8.94922 19.9199"
+                stroke="#7962EE"
+                stroke-width="2"
+                stroke-miterlimit="10"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- product media swiper modal -->
+
+    <!-- add review modal -->
+    <div class="overlay" id="add-review-modal-overlay"></div>
+    <div id="add-review-modal" class="modal">
+      <div class="modal-head">
+        <p class="label">Rate Us</p>
+        <div class="cross-button"></div>
+      </div>
+      <div class="modal-body">
+        <div class="add-review-modal-content">
+          <div class="add-review-modal-content-form">
+            <div class="product-entity">
+              <div class="product-entity-photo">
+                <img src="/public/products/1.png" alt="" />
+              </div>
+              <div class="product-entity-info">
+                <p class="title single-product-title-review">
+                  Flame Air Diffuser Volcano – Ultrasonic Oil Aroma Diffuser,
+                  560ml Large Capacity, Auto Shut-off Protection, Ideal for
+                  Home, Office, Yoga or Gym – V21-B
+                </p>
+                <div class="stars">
+                  <img src="/public/star-filled.svg" alt="" class="star" />
+                  <img src="/public/star-filled.svg" alt="" class="star" />
+                  <img src="/public/star-filled.svg" alt="" class="star" />
+                  <img src="/public/star-filled.svg" alt="" class="star" />
+                  <img src="/public/star-filled.svg" alt="" class="star" />
+                </div>
+              </div>
+              <div class="product-entity-price product-price with-discount">
+                <p class="text-18 weight-500">$49,00</p>
+                <span class="text-18"> $66,00 </span>
+              </div>
+            </div>
+            <div class="stars-group rate-input">
+              <p class="text-18">Quality <span class="red-text"> * </span></p>
+              <div class="stars">
+                <img src="/public/star-filled.svg" alt="" class="star" />
+                <img src="/public/star-filled.svg" alt="" class="star" />
+                <img src="/public/star-filled.svg" alt="" class="star" />
+                <img src="/public/star-filled.svg" alt="" class="star" />
+                <img src="/public/star-filled.svg" alt="" class="star" />
+              </div>
+            </div>
+            <div class="input-moving-placeholder">
+              <div class="input-wrapper">
+                <input type="text" />
+                <span class="placeholder">
+                  Your name <span class="red-text">*</span>
+                </span>
+              </div>
+            </div>
+            <div class="input-moving-placeholder">
+              <div class="input-wrapper">
+                <input type="text" />
+                <span class="placeholder">
+                  Your email <span class="red-text">*</span>
+                </span>
+              </div>
+            </div>
+            <textarea
+              name=""
+              placeholder="Write something"
+              id=""
+              cols="30"
+              rows="5"
+              class="form-input"
+            ></textarea>
+          </div>
+          <div class="buttons-row">
+            <button class="button boarded">
+              <img src="/public/upload-purple.svg" alt="" />
+              Upload Photos
+            </button>
+            <button class="button primary add-review-modal-close">
+              Submit Your Review
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- add review modal -->
+    <div class="tabs product-tabs">
+      <a href="#overview" data-tab="product-media" class="tab active">
+        <p class="text-18 weight-500">Overview</p>
+      </a>
+      <a href="#reviews" data-tab="reviews" class="tab">
+        <p class="text-18 weight-500">Reviews</p>
+      </a>
+      <a href="#description" data-tab="description" class="tab">
+        <p class="text-18 weight-500">Description</p>
+      </a>
+      <a data-tab="specifications" href="#specifications" class="tab">
+        <p class="text-18 weight-500">Specifications</p>
+      </a>
+    </div>
+    <div class="fixed-nav">
+      <div class="ticker" data-speed="1" data-direction="right">
+        <div id="ticker-first" class="ticker__list">
+          <div>
+            <div class="ticker-item text-13">
+              Free delivery for all orders over $99
+              <img src="/public/delivery.svg" alt="" />
+            </div>
+          </div>
+
+          <div>
+            <div class="ticker-item text-13">
+              Free delivery for all orders over $99
+              <img src="/public/delivery.svg" alt="" />
+            </div>
+          </div>
+
+          <div>
+            <div class="ticker-item text-13">
+              Free delivery for all orders over $99
+              <img src="/public/delivery.svg" alt="" />
+            </div>
+          </div>
+
+          <div>
+            <div class="ticker-item text-13">
+              Free delivery for all orders over $99
+              <img src="/public/delivery.svg" alt="" />
+            </div>
+          </div>
+
+          <div>
+            <div class="ticker-item text-13">
+              Free delivery for all orders over $99
+              <img src="/public/delivery.svg" alt="" />
+            </div>
+          </div>
+        </div>
+        <div id="ticker-second" class="ticker__list">
+          <div>
+            <div class="ticker-item text-13">
+              Free delivery for all orders over $99
+              <img src="/public/delivery.svg" alt="" />
+            </div>
+          </div>
+
+          <div>
+            <div class="ticker-item text-13">
+              Free delivery for all orders over $99
+              <img src="/public/delivery.svg" alt="" />
+            </div>
+          </div>
+
+          <div>
+            <div class="ticker-item text-13">
+              Free delivery for all orders over $99
+              <img src="/public/delivery.svg" alt="" />
+            </div>
+          </div>
+
+          <div>
+            <div class="ticker-item text-13">
+              Free delivery for all orders over $99
+              <img src="/public/delivery.svg" alt="" />
+            </div>
+          </div>
+
+          <div>
+            <div class="ticker-item text-13">
+              Free delivery for all orders over $99
+              <img src="/public/delivery.svg" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <header class="header">
+        <a href="" class="header-logo">
+          <img src="/public/logo.svg" alt="" />
+        </a>
+        <ul class="header-links">
+          <li class="text-20 header-link">
+            <a href="/"> Home </a>
+          </li>
+          <li class="text-20 header-link">
+            <a href="/"> Shop </a>
+          </li>
+          <li class="text-20 header-link">
+            <a href="/"> Contact </a>
+          </li>
+        </ul>
+        <div class="header-mobile-search icon-button">
+          <img src="/public/search-black.svg" alt="" />
+        </div>
+        <div class="header-panel">
+          <div class="input">
+            <img src="/public/search.svg" alt="" class="input-icon" />
+            <input
+              placeholder="I'm shopping for"
+              class="text-18 grey-text weight-400"
+              type="text"
+            />
+          </div>
+          <div class="icon-button header-favourites-btn">
+            <img src="/public/heart.svg" alt="" />
+          </div>
+          <div class="icon-button">
+            <img src="/public/notification.svg" alt="" />
+            <div class="icon-button__circle"></div>
+          </div>
+          <div class="icon-button modal-cart-button">
+            <img src="/public/cart.svg" alt="" />
+          </div>
+          <img
+            class="circle-64 header-avatar"
+            src="/public/layout/header/circle.png"
+            alt=""
+          />
+          <a href="" class="text-18 grey-text weight-600 header-login-link">
+            Log in
+          </a>
+          <div class="icon-button icon-burger">
+            <img src="/public/burger.svg" alt="" />
+          </div>
+        </div>
+      </header>
+    </div>
+    <div class="modal-cart-overlay"></div>
+    <div class="modal-cart">
+      <div class="modal-cart-head">
+        <span class="label text-32 weight-600"> Your Cart - 3 </span>
+        <div class="cross-button modal-cart-cross-button"></div>
+      </div>
+      <div class="modal-cart-free-shipping">
+        <p class="text-18">You're $37.30 away from free shipping!</p>
+        <div class="progress">
+          <div style="width: 75%"></div>
+        </div>
+      </div>
+      <div class="modal-cart-body">
+        <div class="orders">
+          <div class="order">
+            <img src="/public/modal-cart/cross.svg" alt="" class="cross" />
+            <div class="group">
+              <div class="photo order-photo">
+                <img src="/public/modal-cart/1.png" alt="" />
+              </div>
+              <div class="info">
+                <p class="text-18 weight-500 modal-cart-order-title">
+                  Flame Air Diffuser Volcano – Ultrasonic Oil Aroma Diffuser,
+                  560ml Large Capacity, Auto Shut-off Protection, Ideal for
+                  Home, Office, Yoga or Gym – V21-B
+                </p>
+                <div class="amount product-amount">
+                  <div class="btn subtract disabled">
+                    <div></div>
+                  </div>
+                  <span class="text-22"> 2 </span>
+                  <div class="btn add">
+                    <div></div>
+                    <div></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="order-price with-discount">
+              <p class="text-18 weight-500">$49,00</p>
+              <span class="text-18"> $66,00 </span>
+            </div>
+          </div>
+          <div class="order">
+            <img src="/public/modal-cart/cross.svg" alt="" class="cross" />
+            <div class="group">
+              <div class="photo order-photo">
+                <img src="/public/modal-cart/1.png" alt="" />
+              </div>
+              <div class="info">
+                <p class="text-18 weight-500 modal-cart-order-title">
+                  Flame Air Diffuser Volcano – Ultrasonic Oil Aroma Diffuser,
+                  560ml Large Capacity, Auto Shut-off Protection, Ideal for
+                  Home, Office, Yoga or Gym – V21-B
+                </p>
+                <div class="amount product-amount">
+                  <div class="btn subtract disabled">
+                    <div></div>
+                  </div>
+                  <span class="text-22"> 2 </span>
+                  <div class="btn add">
+                    <div></div>
+                    <div></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="order-price">
+              <p class="text-18 weight-500">$49,00</p>
+              <span class="text-18"> $66,00 </span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-cart-bottom">
+        <div class="flex items-center w-full justify-between">
+          <span class="text-18 weight-600"> Subtotal: </span>
+          <span class="text-18 weight-500"> $150,00 </span>
+        </div>
+        <div class="flex items-center w-full justify-between buttons">
+          <button class="button boarded">Review Full Cart</button>
+          <button class="button primary">
+            Check Out Now
+            <img src="/public/cart-white.svg" alt="" />
+          </button>
+        </div>
+      </div>
+    </div>
+    <div id="smooth-wrapper">
+      <div id="smooth-content">
+        <div class="single-product">
+          <div class="product">
+            <div class="container product-container">
+              <div class="breadcrumbs">
+                <a
+                  href="/"
+                  class="grey-light-secondary-text text-18 weight-500"
+                >
+                  Products /
+                </a>
+                <a href="" class="weight-500 text-18">
+                  Rain Cloud Humidifier & Aromatherapy Oil Diffuser
+                </a>
+              </div>
+              <div class="product-wrapper">
+                <!-- product info -->
+                <div class="product-info">
+                  <div
+                    data-is-tab="true"
+                    data-content-tab="product-media"
+                    class="product-media"
+                  >
+                    <div class="product-main-view with-discount">
+                      <div class="discount-percent">
+                        <p class="text-18 text-white weight-600">-30%</p>
+                      </div>
+                      <div class="product-media-swiper-arrow left">
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M15.0508 19.92L8.53078 13.4C7.76078 12.63 7.76078 11.37 8.53078 10.6L15.0508 4.08002"
+                            stroke="#7962EE"
+                            stroke-width="2"
+                            stroke-miterlimit="10"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                      </div>
+                      <div class="product-media-swiper-arrow right">
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M8.94922 4.07998L15.4692 10.6C16.2392 11.37 16.2392 12.63 15.4692 13.4L8.94922 19.92"
+                            stroke="#7962EE"
+                            stroke-width="2"
+                            stroke-miterlimit="10"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                      </div>
+                      <div class="scale-photo product-media-button">
+                        <img src="/public/scale.svg" alt="" />
+                      </div>
+                      <div class="product-media-swiper swiper">
+                        <div
+                          class="product-media-swiper-wrapper swiper-wrapper"
+                        >
+                          <img
+                            class="product-media-swiper-slide swiper-slide"
+                            src="/public/single-product/1.png"
+                            alt=""
+                          />
+                          <img
+                            class="product-media-swiper-slide swiper-slide"
+                            src="/public/single-product/2.png"
+                            alt=""
+                          />
+                          <img
+                            class="product-media-swiper-slide swiper-slide"
+                            src="/public/single-product/3.png"
+                            alt=""
+                          />
+                          <img
+                            class="product-media-swiper-slide swiper-slide"
+                            src="/public/single-product/4.png"
+                            alt=""
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div data-mobile-hidden="true" class="product-media-widget">
+                      <img
+                        src="/public/single-product/2.png"
+                        alt=""
+                        class="photo"
+                      />
+                      <img
+                        src="/public/single-product/3.png"
+                        alt=""
+                        class="photo"
+                      />
+                      <img
+                        src="/public/single-product/4.png"
+                        alt=""
+                        class="photo"
+                      />
+                      <img
+                        src="/public/single-product/5.png"
+                        alt=""
+                        class="photo"
+                      />
+                      <div class="folder">
+                        <img
+                          src="/public/single-product/3.png"
+                          alt=""
+                          class="photo-in-folder"
+                        />
+                        <img
+                          src="/public/single-product/4.png"
+                          alt=""
+                          class="photo-in-folder"
+                        />
+                        <img
+                          src="/public/single-product/5.png"
+                          alt=""
+                          class="photo-in-folder"
+                        />
+                        <div class="photos-in-folder-count">
+                          <div class="text-white text-18">+3</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="product-order-panel">
+                    <p class="text-28 weight-600 text-black">
+                      Rain Cloud Humidifier & Aromatherapy Oil Diffuser
+                    </p>
+                    <div class="product-order-panel-wrapper">
+                      <!-- product rating -->
+                      <div class="stars-group">
+                        <div class="stars">
+                          <img
+                            src="/public/star-filled.svg"
+                            alt=""
+                            class="star"
+                          />
+                          <img
+                            src="/public/star-filled.svg"
+                            alt=""
+                            class="star"
+                          />
+                          <img
+                            src="/public/star-filled.svg"
+                            alt=""
+                            class="star"
+                          />
+                          <img
+                            src="/public/star-filled.svg"
+                            alt=""
+                            class="star"
+                          />
+                          <img
+                            src="/public/star-filled.svg"
+                            alt=""
+                            class="star"
+                          />
+                        </div>
+                        <p class="text-18 grey-secondary-text">(20)</p>
+                      </div>
+                      <!-- product short desc -->
+                      <p class="text-18 product-short-desc">
+                        Enhanced Sleep and Stress Relief, Modern Design
+                      </p>
+                      <!-- product labels -->
+                      <div class="product-labels">
+                        <div class="product-label">
+                          Fast shipping
+                          <img src="/public/shipping.svg" alt="" class="icon" />
+                        </div>
+                        <div class="product-label">
+                          Ship Within
+                          <img src="/public/24h.svg" alt="" class="icon" />
+                        </div>
+                        <div class="product-label">
+                          15 days return
+                          <img src="/public/return.svg" alt="" class="icon" />
+                        </div>
+                      </div>
+                      <!-- product colour select -->
+                      <div class="product-colour-select">
+                        <div class="label">
+                          <p class="text-18 weight-600">Select colour:</p>
+                          <span class="text-18 grey-secondary-text">
+                            White
+                          </span>
+                        </div>
+                        <div class="colours">
+                          <div
+                            style="background-color: white"
+                            class="colour active"
+                          ></div>
+                          <div
+                            style="background-color: #d9ffbb"
+                            class="colour"
+                          ></div>
+                          <div
+                            style="background-color: #fff9cb"
+                            class="colour"
+                          ></div>
+                        </div>
+                      </div>
+                      <!-- product size select -->
+                      <div class="product-size-select">
+                        <div class="label">
+                          <p class="text-18 weight-600">Select size:</p>
+                          <span class="text-18 grey-secondary-text">
+                            Large
+                          </span>
+                        </div>
+                        <div class="sizes">
+                          <div class="size">
+                            <p class="text-12 weight-500">Small</p>
+                          </div>
+                          <div class="size">
+                            <p class="text-12 weight-500">Medium</p>
+                          </div>
+                          <div class="size active">
+                            <p class="text-12 weight-500">Large</p>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- product free delivery -->
+                      <div class="product-free-delivery">
+                        <div class="row">
+                          <img
+                            src="/public/free-delivery.svg"
+                            alt=""
+                            class="icon"
+                          />
+                          <p class="text-18">
+                            <span> FREE </span> delivery Get it by Tue, Dec 19th
+                            if ordered within 2 days, 0 hrs
+                          </p>
+                        </div>
+                        <div class="delivering-to">
+                          <p class="text-18 weight-600">Delivering to:</p>
+                          <span class="text-18 grey-secondary-text">
+                            00632
+                          </span>
+                        </div>
+                      </div>
+                      <!-- product status -->
+                      <div class="product-status">
+                        <p class="text-18 weight-600">Status:</p>
+                        <span class="text-18 weight-500"> In Stock </span>
+                      </div>
+                      <!-- product discount select -->
+                      <div class="product-discount-select">
+                        <div class="product-discount-select-item active">
+                          <p class="text-12">
+                            Buy <span class="weight-700"> 2 items </span>
+                          </p>
+                          <p class="text-12">
+                            get a <span class="weight-700"> 10% OFF </span>
+                          </p>
+                        </div>
+                        <div class="product-discount-select-item">
+                          <p class="text-12">
+                            Buy <span class="weight-700"> 3 items </span>
+                          </p>
+                          <p class="text-12">
+                            get a <span class="weight-700"> 15% OFF </span>
+                          </p>
+                        </div>
+                      </div>
+                      <!-- product amount and price -->
+                      <div class="product-amount-and-price">
+                        <div class="amount product-amount">
+                          <div class="btn subtract disabled">
+                            <div></div>
+                          </div>
+                          <span class="text-22"> 2 </span>
+                          <div class="btn add">
+                            <div></div>
+                            <div></div>
+                          </div>
+                        </div>
+                        <div class="price with-discount">
+                          <p class="text-24 weight-600">$49.00</p>
+                          <span class="text-18 grey-secondary-text">
+                            $70.00
+                          </span>
+                        </div>
+                      </div>
+                      <!-- product action buttons -->
+                      <div class="product-action-buttons">
+                        <button class="button boarded icon">
+                          <svg
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              fill-rule="evenodd"
+                              clip-rule="evenodd"
+                              d="M2.16005 12.6389C3.95405 18.2229 9.94705 21.2359 12.003 21.2359C14.074 21.2359 20.087 18.2219 21.8431 12.6379C22.993 9.04594 21.7181 4.35794 17.652 3.04794C15.92 2.49294 13.547 2.69694 11.981 4.28994C10.53 2.89594 8.37405 2.39294 6.34305 3.04894C2.28105 4.35594 1.00805 9.04494 2.15905 12.6379L2.16005 12.6389ZM12.003 19.7359C10.818 19.7359 5.23505 17.3059 3.58805 12.1809C2.65705 9.27294 3.62105 5.50094 6.80305 4.47594C8.19405 4.02694 10.226 4.27894 11.3951 5.89294C11.54 6.09194 11.772 6.19194 12.019 6.20194C12.265 6.19694 12.493 6.07094 12.6291 5.86594C13.6951 4.24794 15.743 4.01194 17.1931 4.47594C20.378 5.50194 21.344 9.27394 20.413 12.1839C18.802 17.3069 13.197 19.7359 12.003 19.7359Z"
+                              fill="#252525"
+                            />
+                          </svg>
+                        </button>
+                        <button class="button primary">
+                          Add to cart
+                          <svg
+                            width="26"
+                            height="24"
+                            viewBox="0 0 26 24"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              fill-rule="evenodd"
+                              clip-rule="evenodd"
+                              d="M10.3095 19.5002C11.3706 19.5002 12.2329 20.3415 12.2329 21.3765C12.2329 22.4115 11.3706 23.2502 10.3095 23.2502C9.24854 23.2502 8.38867 22.4115 8.38867 21.3765C8.38867 20.3415 9.24854 19.5002 10.3095 19.5002Z"
+                              fill="white"
+                            />
+                            <path
+                              fill-rule="evenodd"
+                              clip-rule="evenodd"
+                              d="M18.6226 19.5002C19.6836 19.5002 20.546 20.3415 20.546 21.3765C20.546 22.4115 19.6836 23.2502 18.6226 23.2502C17.5616 23.2502 16.6992 22.4115 16.6992 21.3765C16.6992 20.3415 17.5616 19.5002 18.6226 19.5002Z"
+                              fill="white"
+                            />
+                            <path
+                              d="M3.51562 3.24947L5.64791 3.60947L8.17282 15.0825C8.25278 16.0175 9.05341 16.7355 10.015 16.7355H19.6636C20.5821 16.7355 21.3612 16.0775 21.4935 15.1895L23.7622 7.49934C23.8821 6.69034 23.2394 5.96634 22.4018 5.96634L6.47949 6.78224"
+                              stroke="white"
+                              stroke-width="1.7"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                          </svg>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="product-info-tabs">
+                    <div class="content content-tabs custom-scrollbar pr">
+                      <div
+                        id="reviews"
+                        data-content-tab="reviews"
+                        class="product-reviews product-tab-content"
+                        data-is-tab="true"
+                      >
+                        <div class="load-more">
+                          <button class="button boarded">Load more</button>
+                        </div>
+                        <span class="text-24 product-tab-content-label">
+                          Reviews
+                        </span>
+                        <div class="product-reviews-stats">
+                          <div class="left">
+                            <span class="middle-rate"> 4.5 </span>
+                            <div class="stars">
+                              <img
+                                src="/public/star-filled.svg"
+                                alt=""
+                                class="star"
+                              />
+                              <img
+                                src="/public/star-filled.svg"
+                                alt=""
+                                class="star"
+                              />
+                              <img
+                                src="/public/star-filled.svg"
+                                alt=""
+                                class="star"
+                              />
+                              <img
+                                src="/public/star-filled.svg"
+                                alt=""
+                                class="star"
+                              />
+                              <img
+                                src="/public/star-filled.svg"
+                                alt=""
+                                class="star"
+                              />
+                            </div>
+                            <p class="text-18 grey-secondary-text weight-600">
+                              110 Reviews
+                            </p>
+                          </div>
+                          <div class="right">
+                            <div class="range">
+                              <p class="text-18 weight-600">5</p>
+                              <div>
+                                <div></div>
+                              </div>
+                            </div>
+                            <div class="range">
+                              <p class="text-18 weight-600">4</p>
+                              <div>
+                                <div></div>
+                              </div>
+                            </div>
+                            <div class="range">
+                              <p class="text-18 weight-600">3</p>
+                              <div>
+                                <div></div>
+                              </div>
+                            </div>
+                            <div class="range">
+                              <p class="text-18 weight-600">2</p>
+                              <div>
+                                <div></div>
+                              </div>
+                            </div>
+                            <div class="range">
+                              <p class="text-18 weight-600">1</p>
+                              <div>
+                                <div></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="buttons-row">
+                          <button class="add-review-button button primary">
+                            Write a Review
+                          </button>
+                          <button class="add-review-button button boarded">
+                            Only With Photo
+                          </button>
+                        </div>
+                        <div class="reviews">
+                          <div class="product-review">
+                            <div class="product-review-head">
+                              <div class="product-review-author">
+                                <img
+                                  src="/public/single-product/review.png"
+                                  alt=""
+                                  class="photo"
+                                />
+                                <div class="info">
+                                  <p class="text-18 weight-600">Yalenanam</p>
+                                  <span> 9 May 2023 </span>
+                                </div>
+                              </div>
+                              <div class="product-review-grade">
+                                <div class="stars">
+                                  <img
+                                    src="/public/star-filled.svg"
+                                    alt=""
+                                    class="star"
+                                  />
+                                  <img
+                                    src="/public/star-filled.svg"
+                                    alt=""
+                                    class="star"
+                                  />
+                                  <img
+                                    src="/public/star-filled.svg"
+                                    alt=""
+                                    class="star"
+                                  />
+                                  <img
+                                    src="/public/star-filled.svg"
+                                    alt=""
+                                    class="star"
+                                  />
+                                  <img
+                                    src="/public/star-filled.svg"
+                                    alt=""
+                                    class="star"
+                                  />
+                                </div>
+                              </div>
+                            </div>
+                            <div class="product-review-text">
+                              <p class="text-18">
+                                I love love love this rain cloud . I waited
+                                almost 6 months for the restock! Glad I was able
+                                to purchase It's truly a game-changer!
+                              </p>
+                            </div>
+                          </div>
+                          <div class="product-review">
+                            <div class="product-review-head">
+                              <div class="product-review-author">
+                                <img
+                                  src="/public/single-product/review.png"
+                                  alt=""
+                                  class="photo"
+                                />
+                                <div class="info">
+                                  <p class="text-18 weight-600">Yalenanam</p>
+                                  <span> 9 May 2023 </span>
+                                </div>
+                              </div>
+                              <div class="product-review-grade">
+                                <div class="stars">
+                                  <img
+                                    src="/public/star-filled.svg"
+                                    alt=""
+                                    class="star"
+                                  />
+                                  <img
+                                    src="/public/star-filled.svg"
+                                    alt=""
+                                    class="star"
+                                  />
+                                  <img
+                                    src="/public/star-filled.svg"
+                                    alt=""
+                                    class="star"
+                                  />
+                                  <img
+                                    src="/public/star-filled.svg"
+                                    alt=""
+                                    class="star"
+                                  />
+                                  <img
+                                    src="/public/star-filled.svg"
+                                    alt=""
+                                    class="star"
+                                  />
+                                </div>
+                              </div>
+                            </div>
+                            <div class="product-review-text">
+                              <p class="text-18">
+                                I love love love this rain cloud . I waited
+                                almost 6 months for the restock! Glad I was able
+                                to purchase It's truly a game-changer!
+                              </p>
+                            </div>
+                          </div>
+                          <div class="product-review">
+                            <div class="product-review-head">
+                              <div class="product-review-author">
+                                <img
+                                  src="/public/single-product/review.png"
+                                  alt=""
+                                  class="photo"
+                                />
+                                <div class="info">
+                                  <p class="text-18 weight-600">Yalenanam</p>
+                                  <span> 9 May 2023 </span>
+                                </div>
+                              </div>
+                              <div class="product-review-grade">
+                                <div class="stars">
+                                  <img
+                                    src="/public/star-filled.svg"
+                                    alt=""
+                                    class="star"
+                                  />
+                                  <img
+                                    src="/public/star-filled.svg"
+                                    alt=""
+                                    class="star"
+                                  />
+                                  <img
+                                    src="/public/star-filled.svg"
+                                    alt=""
+                                    class="star"
+                                  />
+                                  <img
+                                    src="/public/star-filled.svg"
+                                    alt=""
+                                    class="star"
+                                  />
+                                  <img
+                                    src="/public/star-filled.svg"
+                                    alt=""
+                                    class="star"
+                                  />
+                                </div>
+                              </div>
+                            </div>
+                            <div class="product-review-text">
+                              <p class="text-18">
+                                I love love love this rain cloud . I waited
+                                almost 6 months for the restock! Glad I was able
+                                to purchase It's truly a game-changer!
+                              </p>
+                            </div>
+                          </div>
+                          <div class="product-review">
+                            <div class="product-review-head">
+                              <div class="product-review-author">
+                                <img
+                                  src="/public/single-product/review.png"
+                                  alt=""
+                                  class="photo"
+                                />
+                                <div class="info">
+                                  <p class="text-18 weight-600">Yalenanam</p>
+                                  <span> 9 May 2023 </span>
+                                </div>
+                              </div>
+                              <div class="product-review-grade">
+                                <div class="stars">
+                                  <img
+                                    src="/public/star-filled.svg"
+                                    alt=""
+                                    class="star"
+                                  />
+                                  <img
+                                    src="/public/star-filled.svg"
+                                    alt=""
+                                    class="star"
+                                  />
+                                  <img
+                                    src="/public/star-filled.svg"
+                                    alt=""
+                                    class="star"
+                                  />
+                                  <img
+                                    src="/public/star-filled.svg"
+                                    alt=""
+                                    class="star"
+                                  />
+                                  <img
+                                    src="/public/star-filled.svg"
+                                    alt=""
+                                    class="star"
+                                  />
+                                </div>
+                              </div>
+                            </div>
+                            <div class="product-review-text">
+                              <p class="text-18">
+                                I love love love this rain cloud . I waited
+                                almost 6 months for the restock! Glad I was able
+                                to purchase It's truly a game-changer!
+                              </p>
+                            </div>
+                          </div>
+                          <div class="product-review">
+                            <div class="product-review-head">
+                              <div class="product-review-author">
+                                <img
+                                  src="/public/single-product/review.png"
+                                  alt=""
+                                  class="photo"
+                                />
+                                <div class="info">
+                                  <p class="text-18 weight-600">Yalenanam</p>
+                                  <span> 9 May 2023 </span>
+                                </div>
+                              </div>
+                              <div class="product-review-grade">
+                                <div class="stars">
+                                  <img
+                                    src="/public/star-filled.svg"
+                                    alt=""
+                                    class="star"
+                                  />
+                                  <img
+                                    src="/public/star-filled.svg"
+                                    alt=""
+                                    class="star"
+                                  />
+                                  <img
+                                    src="/public/star-filled.svg"
+                                    alt=""
+                                    class="star"
+                                  />
+                                  <img
+                                    src="/public/star-filled.svg"
+                                    alt=""
+                                    class="star"
+                                  />
+                                  <img
+                                    src="/public/star-filled.svg"
+                                    alt=""
+                                    class="star"
+                                  />
+                                </div>
+                              </div>
+                            </div>
+                            <div class="product-review-text">
+                              <p class="text-18">
+                                I love love love this rain cloud . I waited
+                                almost 6 months for the restock! Glad I was able
+                                to purchase It's truly a game-changer!
+                              </p>
+                            </div>
+                          </div>
+                          <div class="product-review">
+                            <div class="product-review-head">
+                              <div class="product-review-author">
+                                <img
+                                  src="/public/single-product/review.png"
+                                  alt=""
+                                  class="photo"
+                                />
+                                <div class="info">
+                                  <p class="text-18 weight-600">Yalenanam</p>
+                                  <span> 9 May 2023 </span>
+                                </div>
+                              </div>
+                              <div class="product-review-grade">
+                                <div class="stars">
+                                  <img
+                                    src="/public/star-filled.svg"
+                                    alt=""
+                                    class="star"
+                                  />
+                                  <img
+                                    src="/public/star-filled.svg"
+                                    alt=""
+                                    class="star"
+                                  />
+                                  <img
+                                    src="/public/star-filled.svg"
+                                    alt=""
+                                    class="star"
+                                  />
+                                  <img
+                                    src="/public/star-filled.svg"
+                                    alt=""
+                                    class="star"
+                                  />
+                                  <img
+                                    src="/public/star-filled.svg"
+                                    alt=""
+                                    class="star"
+                                  />
+                                </div>
+                              </div>
+                            </div>
+                            <div class="product-review-text">
+                              <p class="text-18">
+                                I love love love this rain cloud . I waited
+                                almost 6 months for the restock! Glad I was able
+                                to purchase It's truly a game-changer!
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        id="description"
+                        data-content-tab="description"
+                        class="product-description product-tab-content"
+                        data-is-tab="true"
+                      >
+                        <div class="load-more">
+                          <button class="button boarded">Load more</button>
+                        </div>
+                        <span
+                          class="product-tab-content-label text-24 weight-500"
+                          >Product Description</span
+                        >
+
+                        <p class="text-18">
+                          Welcome to the world of serenity with LuaPer’s Rain
+                          Cloud Humidifier and Aromatherapy Oil Diffuser, a
+                          unique and portable essential oil diffuser designed to
+                          enhance sleep, alleviate stress and uplift the
+                          ambiance of your surroundings. This mini essential oil
+                          diffuser is not only compact but also a powerful
+                          companion at your bedside. Indulge in the soothing
+                          rain sounds of our rain cloud humidifier, designed to
+                          whisk you away into a tranquil state of mind. Its
+                          essential oil wall diffuser functionality aids in
+                          stress relief and sharpens focus, facilitating
+                          productivity in any environment, be it home or office.
+                          When you see the rain cloud humidifier water drip,
+                          you’ll find yourself in a world of tranquility. Our
+                          device stands out from other glass diffusers for
+                          essential oils with its unique plug-in mechanism. This
+                          cloud rain humidifier effortlessly hydrates your
+                          space, fighting dry skin and sinuses. Thanks to its
+                          ultrasonic essential oil diffuser capabilities, you
+                          can enjoy up to 15 hours of continuous use, proving
+                          ideal for long spells of relaxation or work. Welcome
+                          to the world of serenity with LuaPer’s Rain Cloud
+                          Humidifier and Aromatherapy Oil Diffuser, a unique and
+                          portable essential oil diffuser designed to enhance
+                          sleep, alleviate stress and uplift the ambiance of
+                          your surroundings. This mini essential oil diffuser is
+                          not only compact but also a powerful companion at your
+                          bedside. Indulge in the soothing rain sounds of our
+                          rain cloud humidifier, designed to whisk you away into
+                          a tranquil state of mind. Its essential oil wall
+                          diffuser functionality aids in stress relief and
+                          sharpens focus, facilitating productivity in any
+                          environment, be it home or office. When you see the
+                          rain cloud humidifier water drip, you’ll find yourself
+                          in a world of tranquility. Our device stands out from
+                          other glass diffusers for essential oils with its
+                          unique plug-in mechanism. This cloud rain humidifier
+                          effortlessly hydrates your space, fighting dry skin
+                          and sinuses. Thanks to its ultrasonic essential oil
+                          diffuser capabilities, you can enjoy up to 15 hours of
+                          continuous use, proving ideal for long spells of
+                          relaxation or work. Welcome to the world of serenity
+                          with LuaPer’s Rain Cloud Humidifier and Aromatherapy
+                          Oil Diffuser, a unique and portable essential oil
+                          diffuser designed to enhance sleep, alleviate stress
+                          and uplift the ambiance of your surroundings. This
+                          mini essential oil diffuser is not only compact but
+                          also a powerful companion at your bedside. Indulge in
+                          the soothing rain sounds of our rain cloud humidifier,
+                          designed to whisk you away into a tranquil state of
+                          mind. Its essential oil wall diffuser functionality
+                          aids in stress relief and sharpens focus, facilitating
+                          productivity in any environment, be it home or office.
+                          When you see the rain cloud humidifier water drip,
+                          you’ll find yourself in a world of tranquility. Our
+                          device stands out from other glass diffusers for
+                          essential oils with its unique plug-in mechanism. This
+                          cloud rain humidifier effortlessly hydrates your
+                          space, fighting dry skin and sinuses. Thanks to its
+                          ultrasonic essential oil diffuser capabilities, you
+                          can enjoy up to 15 hours of continuous use, proving
+                          ideal for long spells of relaxation or work. Welcome
+                          to the world of serenity with LuaPer’s Rain Cloud
+                          Humidifier and Aromatherapy Oil Diffuser, a unique and
+                          portable essential oil diffuser designed to enhance
+                          sleep, alleviate stress and uplift the ambiance of
+                          your surroundings. This mini essential oil diffuser is
+                          not only compact but also a powerful companion at your
+                          bedside. Indulge in the soothing rain sounds of our
+                          rain cloud humidifier, designed to whisk you away into
+                          a tranquil state of mind. Its essential oil wall
+                          diffuser functionality aids in stress relief and
+                          sharpens focus, facilitating productivity in any
+                          environment, be it home or office. When you see the
+                          rain cloud humidifier water drip, you’ll find yourself
+                          in a world of tranquility. Our device stands out from
+                          other glass diffusers for essential oils with its
+                          unique plug-in mechanism. This cloud rain humidifier
+                          effortlessly hydrates your space, fighting dry skin
+                          and sinuses. Thanks to its ultrasonic essential oil
+                          diffuser capabilities, you can enjoy up to 15 hours of
+                          continuous use, proving ideal for long spells of
+                          relaxation or work.
+                        </p>
+                      </div>
+                      <div
+                        class="product-specifications product-tab-content unlimited"
+                        id="specifications"
+                        data-is-tab="true"
+                        data-content-tab="specifications"
+                      >
+                        <span
+                          class="product-tab-content-label text-24 weight-500"
+                          >Specifications</span
+                        >
+
+                        <div class="product-specifications-list">
+                          <div class="product-specifications-list-item">
+                            <div>Material</div>
+                            <div>Plastic</div>
+                          </div>
+                          <div class="product-specifications-list-item">
+                            <div>Material</div>
+                            <div>Plastic</div>
+                          </div>
+                          <div class="product-specifications-list-item">
+                            <div>Material</div>
+                            <div>Plastic</div>
+                          </div>
+                          <div class="product-specifications-list-item">
+                            <div>Material</div>
+                            <div>Plastic</div>
+                          </div>
+                          <div class="product-specifications-list-item">
+                            <div>Material</div>
+                            <div>Plastic</div>
+                          </div>
+                          <div class="product-specifications-list-item">
+                            <div>Material</div>
+                            <div>Plastic</div>
+                          </div>
+                          <div class="product-specifications-list-item">
+                            <div>Material</div>
+                            <div>Plastic</div>
+                          </div>
+                          <div class="product-specifications-list-item">
+                            <div>Material</div>
+                            <div>Plastic</div>
+                          </div>
+                          <div class="product-specifications-list-item">
+                            <div>Material</div>
+                            <div>Plastic</div>
+                          </div>
+                          <div class="product-specifications-list-item">
+                            <div>Material</div>
+                            <div>Plastic</div>
+                          </div>
+                          <div class="product-specifications-list-item">
+                            <div>Material</div>
+                            <div>Plastic</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- product order panel -->
+                <div class="product-order-panel">
+                  <p class="text-28 weight-600 text-black">
+                    Rain Cloud Humidifier & Aromatherapy Oil Diffuser
+                  </p>
+                  <div class="product-order-panel-wrapper">
+                    <!-- product rating -->
+                    <div class="stars-group">
+                      <div class="stars">
+                        <img
+                          src="/public/star-filled.svg"
+                          alt=""
+                          class="star"
+                        />
+                        <img
+                          src="/public/star-filled.svg"
+                          alt=""
+                          class="star"
+                        />
+                        <img
+                          src="/public/star-filled.svg"
+                          alt=""
+                          class="star"
+                        />
+                        <img
+                          src="/public/star-filled.svg"
+                          alt=""
+                          class="star"
+                        />
+                        <img
+                          src="/public/star-filled.svg"
+                          alt=""
+                          class="star"
+                        />
+                      </div>
+                      <p class="text-18 grey-secondary-text">(20)</p>
+                    </div>
+                    <!-- product short desc -->
+                    <p class="text-18 product-short-desc">
+                      Enhanced Sleep and Stress Relief, Modern Design
+                    </p>
+                    <!-- product labels -->
+                    <div class="product-labels">
+                      <div class="product-label">
+                        Fast shipping
+                        <img src="/public/shipping.svg" alt="" class="icon" />
+                      </div>
+                      <div class="product-label">
+                        Ship Within
+                        <img src="/public/24h.svg" alt="" class="icon" />
+                      </div>
+                      <div class="product-label">
+                        15 days return
+                        <img src="/public/return.svg" alt="" class="icon" />
+                      </div>
+                    </div>
+                    <!-- product colour select -->
+                    <div class="product-colour-select">
+                      <div class="label">
+                        <p class="text-18 weight-600">Select colour:</p>
+                        <span class="text-18 grey-secondary-text"> White </span>
+                      </div>
+                      <div class="colours">
+                        <div
+                          style="background-color: white"
+                          class="colour active"
+                        ></div>
+                        <div
+                          style="background-color: #d9ffbb"
+                          class="colour"
+                        ></div>
+                        <div
+                          style="background-color: #fff9cb"
+                          class="colour"
+                        ></div>
+                      </div>
+                    </div>
+                    <!-- product size select -->
+                    <div class="product-size-select">
+                      <div class="label">
+                        <p class="text-18 weight-600">Select size:</p>
+                        <span class="text-18 grey-secondary-text"> Large </span>
+                      </div>
+                      <div class="sizes">
+                        <div class="size">
+                          <p class="text-12 weight-500">Small</p>
+                        </div>
+                        <div class="size">
+                          <p class="text-12 weight-500">Medium</p>
+                        </div>
+                        <div class="size active">
+                          <p class="text-12 weight-500">Large</p>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- product free delivery -->
+                    <div class="product-free-delivery">
+                      <div class="row">
+                        <img
+                          src="/public/free-delivery.svg"
+                          alt=""
+                          class="icon"
+                        />
+                        <p class="text-18">
+                          <span> FREE </span> delivery Get it by Tue, Dec 19th
+                          if ordered within 2 days, 0 hrs
+                        </p>
+                      </div>
+                      <div class="delivering-to">
+                        <p class="text-18 weight-600">Delivering to:</p>
+                        <span class="text-18 grey-secondary-text"> 00632 </span>
+                      </div>
+                    </div>
+                    <!-- product status -->
+                    <div class="product-status">
+                      <p class="text-18 weight-600">Status:</p>
+                      <span class="text-18 weight-500"> In Stock </span>
+                    </div>
+                    <!-- product discount select -->
+                    <div class="product-discount-select">
+                      <div class="product-discount-select-item active">
+                        <p class="text-12">
+                          Buy <span class="weight-700"> 2 items </span>
+                        </p>
+                        <p class="text-12">
+                          get a <span class="weight-700"> 10% OFF </span>
+                        </p>
+                      </div>
+                      <div class="product-discount-select-item">
+                        <p class="text-12">
+                          Buy <span class="weight-700"> 3 items </span>
+                        </p>
+                        <p class="text-12">
+                          get a <span class="weight-700"> 15% OFF </span>
+                        </p>
+                      </div>
+                    </div>
+                    <!-- product amount and price -->
+                    <div class="product-amount-and-price">
+                      <div class="amount product-amount">
+                        <div class="btn subtract disabled">
+                          <div></div>
+                        </div>
+                        <span class="text-22"> 2 </span>
+                        <div class="btn add">
+                          <div></div>
+                          <div></div>
+                        </div>
+                      </div>
+                      <div class="price with-discount">
+                        <p class="text-24 weight-600">$49.00</p>
+                        <span class="text-18 grey-secondary-text">
+                          $70.00
+                        </span>
+                      </div>
+                    </div>
+                    <!-- product action buttons -->
+                    <div class="product-action-buttons">
+                      <button class="button boarded icon">
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M2.16005 12.6389C3.95405 18.2229 9.94705 21.2359 12.003 21.2359C14.074 21.2359 20.087 18.2219 21.8431 12.6379C22.993 9.04594 21.7181 4.35794 17.652 3.04794C15.92 2.49294 13.547 2.69694 11.981 4.28994C10.53 2.89594 8.37405 2.39294 6.34305 3.04894C2.28105 4.35594 1.00805 9.04494 2.15905 12.6379L2.16005 12.6389ZM12.003 19.7359C10.818 19.7359 5.23505 17.3059 3.58805 12.1809C2.65705 9.27294 3.62105 5.50094 6.80305 4.47594C8.19405 4.02694 10.226 4.27894 11.3951 5.89294C11.54 6.09194 11.772 6.19194 12.019 6.20194C12.265 6.19694 12.493 6.07094 12.6291 5.86594C13.6951 4.24794 15.743 4.01194 17.1931 4.47594C20.378 5.50194 21.344 9.27394 20.413 12.1839C18.802 17.3069 13.197 19.7359 12.003 19.7359Z"
+                            fill="#252525"
+                          />
+                        </svg>
+                      </button>
+                      <button class="button primary">
+                        Add to cart
+                        <svg
+                          width="26"
+                          height="24"
+                          viewBox="0 0 26 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M10.3095 19.5002C11.3706 19.5002 12.2329 20.3415 12.2329 21.3765C12.2329 22.4115 11.3706 23.2502 10.3095 23.2502C9.24854 23.2502 8.38867 22.4115 8.38867 21.3765C8.38867 20.3415 9.24854 19.5002 10.3095 19.5002Z"
+                            fill="white"
+                          />
+                          <path
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M18.6226 19.5002C19.6836 19.5002 20.546 20.3415 20.546 21.3765C20.546 22.4115 19.6836 23.2502 18.6226 23.2502C17.5616 23.2502 16.6992 22.4115 16.6992 21.3765C16.6992 20.3415 17.5616 19.5002 18.6226 19.5002Z"
+                            fill="white"
+                          />
+                          <path
+                            d="M3.51562 3.24947L5.64791 3.60947L8.17282 15.0825C8.25278 16.0175 9.05341 16.7355 10.015 16.7355H19.6636C20.5821 16.7355 21.3612 16.0775 21.4935 15.1895L23.7622 7.49934C23.8821 6.69034 23.2394 5.96634 22.4018 5.96634L6.47949 6.78224"
+                            stroke="white"
+                            stroke-width="1.7"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <footer class="footer">
+            <div class="container">
+              <h2 class="weight-600">
+                Subscribe to get information about <br />
+                products and coupons
+              </h2>
+              <div class="footer-content">
+                <div class="footer-contact">
+                  <form class="subscribe-form">
+                    <input
+                      type="email"
+                      class="text-24"
+                      name=""
+                      placeholder="Email"
+                      id="email"
+                    />
+                    <button class="button secondary">Subscribe</button>
+                  </form>
+                  <p class="text-18">
+                    By submitting your email address, you agree to receive
+                    marketing emails from LuaPer, and accept our terms &
+                    conditions and privacy policy.
+                  </p>
+                  <ul class="footer-socials">
+                    <li class="social">
+                      <a href="">
+                        <img src="/public/socials/1.svg" alt="" />
+                      </a>
+                    </li>
+                    <li class="social">
+                      <a href="">
+                        <img src="/public/socials/2.svg" alt="" />
+                      </a>
+                    </li>
+                    <li class="social">
+                      <a href="">
+                        <img src="/public/socials/3.svg" alt="" />
+                      </a>
+                    </li>
+                    <li class="social">
+                      <a href="">
+                        <img src="/public/socials/4.svg" alt="" />
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="footer-links">
+                  <div class="footer-col">
+                    <span class="text-14">Contact us</span>
+                    <a href="" class="text-18 weight-500">9450 SW Gemini Dr</a>
+                    <a href="" class="text-18 weight-500">PMB 35329</a>
+                    <a href="" class="text-18 weight-500"
+                      >Beaverton, Oregon 97008-7105 US</a
+                    >
+                    <a
+                      href="mailto:support@luaper.com"
+                      class="text-18 weight-500"
+                      >support@luaper.com</a
+                    >
+                  </div>
+                  <div class="footer-col">
+                    <span class="text-14">Quick Links</span>
+                    <a href="" class="text-18 weight-500"
+                      >Refund and Returns Policy</a
+                    >
+                    <a href="" class="text-18 weight-500">Term & Conditions</a>
+                    <a href="" class="text-18 weight-500">Privacy Policy</a>
+                    <a href="" class="text-18 weight-500">FAQs</a>
+                  </div>
+                  <div class="footer-col">
+                    <span class="text-14">Company</span>
+                    <a href="" class="text-18 weight-500">About Us</a>
+                    <a href="" class="text-18 weight-500">Contact</a>
+                  </div>
+                  <div class="footer-col">
+                    <span class="text-14">Bussiness</span>
+                    <a href="" class="text-18 weight-500">Our Press</a>
+                    <a href="" class="text-18 weight-500">Checkout</a>
+                    <a href="" class="text-18 weight-500">My account</a>
+                    <a href="" class="text-18 weight-500">Shop</a>
+                  </div>
+                </div>
+                <ul class="footer-socials footer-socials-mobile">
+                  <li class="social">
+                    <a href="">
+                      <img src="/public/socials/1.svg" alt="" />
+                    </a>
+                  </li>
+                  <li class="social">
+                    <a href="">
+                      <img src="/public/socials/2.svg" alt="" />
+                    </a>
+                  </li>
+                  <li class="social">
+                    <a href="">
+                      <img src="/public/socials/3.svg" alt="" />
+                    </a>
+                  </li>
+                  <li class="social">
+                    <a href="">
+                      <img src="/public/socials/4.svg" alt="" />
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="footer-payment">
+                <img src="/public/payment/1.svg" alt="" class="icon" />
+                <img src="/public/payment/2.svg" alt="" class="icon" />
+                <img src="/public/payment/3.svg" alt="" class="icon" />
+                <img src="/public/payment/4.svg" alt="" class="icon" />
+                <img src="/public/payment/5.svg" alt="" class="icon" />
+                <img src="/public/payment/6.svg" alt="" class="icon" />
+                <img src="/public/payment/7.svg" alt="" class="icon" />
+                <img src="/public/payment/8.svg" alt="" class="icon" />
+                <img src="/public/payment/9.svg" alt="" class="icon" />
+              </div>
+              <p class="text-20 text-center w-full">
+                © 2023 Lua Per. All rights reserved.
+              </p>
+            </div>
+          </footer>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script type="text/javascript">
+    window.currentPage = 'single-product'
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/matter-js@0.19.0/build/matter.min.js"></script>
+  <script type="module" src="main.js"></script>
+</html>

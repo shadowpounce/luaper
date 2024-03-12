@@ -1,0 +1,199 @@
+body {
+  font-size: 0.926vw;
+  font-family: 'Manrope', sans-serif;
+  color: $black-smoke;
+
+  overflow-x: hidden;
+
+  @media (max-width: $tablet_big) {
+    font-size: 1.613vw;
+  }
+
+  @media (max-width: $tablet) {
+    font-size: 2.778vw;
+  }
+
+  &::-webkit-scrollbar {
+    appearance: none;
+    background-color: #fafafa;
+    width: 0.5vw;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    width: 100%;
+
+    background-color: #7962ee;
+    border-radius: 0.25vw;
+  }
+}
+
+#smooth-content {
+  width: 100% !important;
+  overflow-x: hidden !important;
+}
+
+.swiper {
+  overflow: unset !important;
+}
+
+*[data-mobile-hidden='true'] {
+  @media (max-width: $tablet_big) {
+    display: none !important;
+  }
+}
+
+*[data-desktop-hidden='true'] {
+  @media (min-width: 1000px) {
+    display: none !important;
+  }
+}
+
+.quote {
+  position: relative;
+
+  span {
+    font-size: 6.713vw;
+    line-height: normal;
+
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+
+    translate: -50% -75%;
+
+    @media (max-width: $tablet) {
+      font-size: 20vw;
+    }
+  }
+}
+
+.space {
+  height: 26vh;
+}
+
+.space-half {
+  height: 13vh;
+
+  @media (max-width: $tablet_big) {
+    height: 10.081vw;
+  }
+}
+
+.font-urbanist {
+  font-family: 'Urbanist', sans-serif;
+}
+
+.font-bricolage {
+  font-family: 'Bricolage Grotesque', sans-serif;
+}
+
+.linethrough {
+  text-decoration: line-through;
+}
+
+.grey-secondary-text {
+  color: $grey-secondary;
+}
+
+.grey-light-secondary-text {
+  color: $grey-light-secondary;
+}
+
+.filter-gray-1 {
+  filter: grayscale(1);
+}
+
+.filter-gray-0 {
+  filter: grayscale(0);
+}
+
+.red-text {
+  color: $red;
+}
+
+.navy-text {
+  color: $navy;
+}
+
+.grey-text {
+  color: $grey-text;
+}
+
+.black-smoke-text {
+  color: $black-smoke;
+}
+
+.grey-light-text {
+  color: $grey-light;
+}
+
+.grey-dark-text {
+  color: $grey-dark;
+}
+
+.white-text {
+  color: #fff;
+}
+
+.primary-text {
+  color: $primary;
+}
+
+.purple-text {
+  color: $purple;
+}
+
+.black-text {
+  color: #000;
+}
+
+.weight-400 {
+  font-weight: 400;
+}
+
+.weight-500 {
+  font-weight: 500;
+}
+
+.weight-600 {
+  font-weight: 600;
+}
+
+.weight-700 {
+  font-weight: 700;
+}
+
+.weight-800 {
+  font-weight: 800;
+}
+
+.lh-150 {
+  line-height: 150%;
+}
+
+.container {
+  padding-inline: 3.472vw;
+
+  width: 100%;
+  height: 100%;
+
+  @media (max-width: $tablet_big) {
+    padding-inline: 3.024vw;
+  }
+
+  @media (max-width: $tablet) {
+    padding-inline: 4.5vw;
+  }
+
+  &.section-container {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 4vh;
+
+    @media (max-width: $tablet) {
+      gap: 5.208vw;
+    }
+  }
+}

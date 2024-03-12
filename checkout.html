@@ -1,0 +1,983 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/src/styles/index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="checkout">
+      <div class="fixed-nav">
+        <div class="ticker" data-speed="1" data-direction="right">
+          <div id="ticker-first" class="ticker__list">
+            <div>
+              <div class="ticker-item text-13">
+                Free delivery for all orders over $99
+                <img src="/public/delivery.svg" alt="" />
+              </div>
+            </div>
+
+            <div>
+              <div class="ticker-item text-13">
+                Free delivery for all orders over $99
+                <img src="/public/delivery.svg" alt="" />
+              </div>
+            </div>
+
+            <div>
+              <div class="ticker-item text-13">
+                Free delivery for all orders over $99
+                <img src="/public/delivery.svg" alt="" />
+              </div>
+            </div>
+
+            <div>
+              <div class="ticker-item text-13">
+                Free delivery for all orders over $99
+                <img src="/public/delivery.svg" alt="" />
+              </div>
+            </div>
+
+            <div>
+              <div class="ticker-item text-13">
+                Free delivery for all orders over $99
+                <img src="/public/delivery.svg" alt="" />
+              </div>
+            </div>
+          </div>
+          <div id="ticker-second" class="ticker__list">
+            <div>
+              <div class="ticker-item text-13">
+                Free delivery for all orders over $99
+                <img src="/public/delivery.svg" alt="" />
+              </div>
+            </div>
+
+            <div>
+              <div class="ticker-item text-13">
+                Free delivery for all orders over $99
+                <img src="/public/delivery.svg" alt="" />
+              </div>
+            </div>
+
+            <div>
+              <div class="ticker-item text-13">
+                Free delivery for all orders over $99
+                <img src="/public/delivery.svg" alt="" />
+              </div>
+            </div>
+
+            <div>
+              <div class="ticker-item text-13">
+                Free delivery for all orders over $99
+                <img src="/public/delivery.svg" alt="" />
+              </div>
+            </div>
+
+            <div>
+              <div class="ticker-item text-13">
+                Free delivery for all orders over $99
+                <img src="/public/delivery.svg" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <header class="header">
+          <a href="" class="header-logo">
+            <img src="/public/logo.svg" alt="" />
+          </a>
+          <ul class="header-links">
+            <li class="text-20 header-link">
+              <a href="/"> Home </a>
+            </li>
+            <li class="text-20 header-link">
+              <a href="/"> Shop </a>
+            </li>
+            <li class="text-20 header-link">
+              <a href="/"> Contact </a>
+            </li>
+          </ul>
+          <div class="header-mobile-search icon-button">
+            <img src="/public/search-black.svg" alt="" />
+          </div>
+          <div class="header-panel">
+            <div class="input">
+              <img src="/public/search.svg" alt="" class="input-icon" />
+              <input
+                placeholder="I'm shopping for"
+                class="text-18 grey-text weight-400"
+                type="text"
+              />
+            </div>
+            <div class="icon-button header-favourites-btn">
+              <img src="/public/heart.svg" alt="" />
+            </div>
+            <div class="icon-button">
+              <img src="/public/notification.svg" alt="" />
+              <div class="icon-button__circle"></div>
+            </div>
+            <div class="icon-button modal-cart-button">
+              <img src="/public/cart.svg" alt="" />
+            </div>
+            <img
+              class="circle-64 header-avatar"
+              src="/public/layout/header/circle.png"
+              alt=""
+            />
+            <a href="" class="text-18 grey-text weight-600 header-login-link">
+              Log in
+            </a>
+            <div class="icon-button icon-burger">
+              <img src="/public/burger.svg" alt="" />
+            </div>
+          </div>
+        </header>
+      </div>
+      <div class="modal-cart-overlay"></div>
+      <div class="modal-cart">
+        <div class="modal-cart-head">
+          <span class="label text-32 weight-600"> Your Cart - 3 </span>
+          <div class="cross-button modal-cart-cross-button"></div>
+        </div>
+        <div class="modal-cart-free-shipping">
+          <p class="text-18">You're $37.30 away from free shipping!</p>
+          <div class="progress">
+            <div style="width: 75%"></div>
+          </div>
+        </div>
+        <div class="modal-cart-body">
+          <div class="orders">
+            <div class="order">
+              <img src="/public/modal-cart/cross.svg" alt="" class="cross" />
+              <div class="group">
+                <div class="photo order-photo">
+                  <img src="/public/modal-cart/1.png" alt="" />
+                </div>
+                <div class="info">
+                  <p class="text-18 weight-500 modal-cart-order-title">
+                    Flame Air Diffuser Volcano – Ultrasonic Oil Aroma Diffuser,
+                    560ml Large Capacity, Auto Shut-off Protection, Ideal for
+                    Home, Office, Yoga or Gym – V21-B
+                  </p>
+                  <div class="amount product-amount">
+                    <div class="btn subtract disabled">
+                      <div></div>
+                    </div>
+                    <span class="text-22"> 2 </span>
+                    <div class="btn add">
+                      <div></div>
+                      <div></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="order-price with-discount">
+                <p class="text-18 weight-500">$49,00</p>
+                <span class="text-18"> $66,00 </span>
+              </div>
+            </div>
+            <div class="order">
+              <img src="/public/modal-cart/cross.svg" alt="" class="cross" />
+              <div class="group">
+                <div class="photo order-photo">
+                  <img src="/public/modal-cart/1.png" alt="" />
+                </div>
+                <div class="info">
+                  <p class="text-18 weight-500 modal-cart-order-title">
+                    Flame Air Diffuser Volcano – Ultrasonic Oil Aroma Diffuser,
+                    560ml Large Capacity, Auto Shut-off Protection, Ideal for
+                    Home, Office, Yoga or Gym – V21-B
+                  </p>
+                  <div class="amount product-amount">
+                    <div class="btn subtract disabled">
+                      <div></div>
+                    </div>
+                    <span class="text-22"> 2 </span>
+                    <div class="btn add">
+                      <div></div>
+                      <div></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="order-price">
+                <p class="text-18 weight-500">$49,00</p>
+                <span class="text-18"> $66,00 </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-cart-bottom">
+          <div class="flex items-center w-full justify-between">
+            <span class="text-18 weight-600"> Subtotal: </span>
+            <span class="text-18 weight-500"> $150,00 </span>
+          </div>
+          <div class="flex items-center w-full justify-between buttons">
+            <button class="button boarded">Review Full Cart</button>
+            <button class="button primary">
+              Check Out Now
+              <img src="/public/cart-white.svg" alt="" />
+            </button>
+          </div>
+        </div>
+      </div>
+      <div id="smooth-wrapper">
+        <div id="smooth-content">
+          <div data-mobile-hidden="true" class="space"></div>
+          <div class="container checkout-container section-container">
+            <a href="/cart" class="checkout-back-to-cart">
+              <img src="/public/black-arrow-left.svg" alt="" />
+              <span class="text-20 weight-500"> Back to cart </span>
+            </a>
+            <div class="checkout-wrapper">
+              <div class="checkout-content">
+                <h3 class="weight-700">Checkout</h3>
+                <div class="checkout-content-stage stage-one">
+                  <div class="express-checkout">
+                    <span class="text-24 weight-600"> Express Checkout </span>
+                    <div class="buttons">
+                      <button>
+                        <p class="text-20 weight-500">Pay with</p>
+                        <img src="/public/checkout/gpay.svg" alt="" />
+                      </button>
+                      <button>
+                        <p class="text-20 weight-500">Pay with</p>
+                        <img src="/public/checkout/apay.svg" alt="" />
+                      </button>
+                    </div>
+                  </div>
+                  <div class="devider">
+                    <span class="text-24 uppercase"> or </span>
+                  </div>
+                  <div class="checkout-field-groups">
+                    <!-- stage 1 ------->
+                    <div class="stage-one-fields inner-field-groups">
+                      <!-- contact information -->
+                      <div data-group="1" class="checkout-field-group">
+                        <div class="head">
+                          <div class="num">
+                            <span class="text-20"> 1 </span>
+                          </div>
+                          <span class="text-24 weight-600">
+                            Contact Information
+                          </span>
+                        </div>
+                        <div class="body">
+                          <p class="weight-500">
+                            Already have an account?
+                            <a href="" class="link-underlined"> Log in. </a>
+                          </p>
+                          <p class="text-20">
+                            We'll use this email to send you details and updates
+                            about your order.
+                          </p>
+                          <div class="input-moving-placeholder">
+                            <div class="input-wrapper">
+                              <input type="text" />
+                              <span class="placeholder"> E-mail </span>
+                            </div>
+                          </div>
+                          <div class="checkbox-group">
+                            <input
+                              type="checkbox"
+                              class="checkbox"
+                              name=""
+                              id=""
+                            />
+                            <span class="normal-case">
+                              Create an account?
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- shipping address -->
+                      <div data-group="2" class="checkout-field-group">
+                        <div class="head">
+                          <div class="num">
+                            <span class="text-20">2</span>
+                          </div>
+                          <span class="text-24 weight-600">
+                            Shipping address
+                          </span>
+                        </div>
+                        <div class="body">
+                          <div class="inputs-moving-placeholder-group">
+                            <div class="input-moving-placeholder">
+                              <div class="input-wrapper">
+                                <input type="text" />
+                                <span class="placeholder"> First Name </span>
+                              </div>
+                            </div>
+                            <div class="input-moving-placeholder">
+                              <div class="input-wrapper">
+                                <input type="text" />
+                                <span class="placeholder"> Last Name </span>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="input-moving-placeholder">
+                            <div class="input-wrapper">
+                              <input type="text" />
+                              <span class="placeholder"> Address </span>
+                            </div>
+                          </div>
+                          <div class="input-moving-placeholder">
+                            <div class="input-wrapper">
+                              <input type="text" />
+                              <span class="placeholder">
+                                Apartment, suite, etc. (optional)
+                              </span>
+                            </div>
+                          </div>
+                          <div class="inputs-moving-placeholder-group">
+                            <div class="input-moving-placeholder">
+                              <div class="input-wrapper">
+                                <input type="text" />
+                                <span class="placeholder">
+                                  Country/Region
+                                </span>
+                              </div>
+                            </div>
+                            <div class="input-moving-placeholder">
+                              <div class="input-wrapper">
+                                <input type="text" />
+                                <span class="placeholder"> City </span>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="inputs-moving-placeholder-group">
+                            <div class="input-moving-placeholder">
+                              <div class="input-wrapper">
+                                <input type="text" />
+                                <span class="placeholder"> Province </span>
+                              </div>
+                            </div>
+                            <div class="input-moving-placeholder">
+                              <div class="input-wrapper">
+                                <input type="text" />
+                                <span class="placeholder"> Postal code </span>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="input-moving-placeholder">
+                            <div class="input-wrapper">
+                              <input type="text" />
+                              <span class="placeholder">
+                                Phone (optional)
+                              </span>
+                            </div>
+                          </div>
+                          <div class="checkbox-group">
+                            <input
+                              type="checkbox"
+                              class="checkbox"
+                              name=""
+                              id=""
+                            />
+                            <span class="normal-case">
+                              Use same address for billing
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- Shipping options -->
+                      <div data-group="3" class="checkout-field-group">
+                        <div class="head">
+                          <div class="num">
+                            <span class="text-20">3</span>
+                          </div>
+                          <span class="text-24 weight-600">
+                            Shipping options
+                          </span>
+                        </div>
+                        <div class="body">
+                          <fieldset class="radio-select-wrapper">
+                            <div class="radio-select">
+                              <div class="radio-select-head">
+                                <div class="group">
+                                  <input
+                                    value="Local pickup"
+                                    class="radio"
+                                    type="radio"
+                                    name="shipping-method"
+                                    id="local-pickup"
+                                  />
+                                  <label for="local-pickup">
+                                    Local pickup
+                                  </label>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="radio-select checked">
+                              <div class="radio-select-head">
+                                <div class="group">
+                                  <input
+                                    checked
+                                    value="Free shipping"
+                                    class="radio"
+                                    type="radio"
+                                    name="shipping-method"
+                                    id="free-shipping"
+                                  />
+                                  <label for="free-shipping">
+                                    Free shipping
+                                  </label>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="radio-select">
+                              <div class="radio-select-head">
+                                <div class="group">
+                                  <input
+                                    value="Flat rate"
+                                    class="radio"
+                                    type="radio"
+                                    name="shipping-method"
+                                    id="flat-rate"
+                                  />
+                                  <label for="flat-rate"> Flat rate </label>
+                                </div>
+                              </div>
+                            </div>
+                          </fieldset>
+                        </div>
+                      </div>
+                      <!-- buttons -->
+                      <div class="checkout-buttons">
+                        <button class="button boarded normal-case">
+                          <img src="/public/black-arrow-left.svg" alt="" />
+                          Return to Basket
+                        </button>
+                        <button
+                          id="to-stage-two"
+                          class="button primary normal-case"
+                        >
+                          Save & Continue
+                          <img src="/public/cart-white.svg" alt="" />
+                        </button>
+                      </div>
+                    </div>
+
+                    <!-- stage 2 ------->
+                    <!-- checkout first stage completed -->
+
+                    <div class="stage-two-fields inner-field-groups">
+                      <div class="checkout-first-stage-completed">
+                        <div class="item">
+                          <div class="group">
+                            <div class="num">
+                              <span class="text-20"> 1 </span>
+                            </div>
+                            <div class="text">
+                              <p class="text-20 weight-600">
+                                Contact Information
+                              </p>
+                              <span>
+                                James Black, +1234567890, jamesblack@gmail.com
+                              </span>
+                            </div>
+                          </div>
+                          <div data-for="1" class="edit-btn">
+                            <img src="/public/edit.svg" alt="" />
+                            Edit
+                          </div>
+                        </div>
+                        <div class="item">
+                          <div class="group">
+                            <div class="num">
+                              <span class="text-20"> 2 </span>
+                            </div>
+                            <div class="text">
+                              <p class="text-20 weight-600">Shipping address</p>
+                              <span>
+                                James Black, +1234567890, jamesblack@gmail.com
+                              </span>
+                            </div>
+                          </div>
+                          <div data-for="2" class="edit-btn">
+                            <img src="/public/edit.svg" alt="" />
+                            Edit
+                          </div>
+                        </div>
+                        <div class="item">
+                          <div class="group">
+                            <div class="num">
+                              <span class="text-20"> 3 </span>
+                            </div>
+                            <div class="text">
+                              <p class="text-20 weight-600">Shipping options</p>
+                              <span>
+                                James Black, +1234567890, jamesblack@gmail.com
+                              </span>
+                            </div>
+                          </div>
+                          <div data-for="3" class="edit-btn">
+                            <img src="/public/edit.svg" alt="" />
+                            Edit
+                          </div>
+                        </div>
+                      </div>
+                      <!-- Payment -->
+                      <div class="checkout-field-group secondary">
+                        <div class="head">
+                          <p class="text-24 weight-600">Payment</p>
+                        </div>
+                        <p class="label">
+                          All transactions are secure and encrypted.
+                        </p>
+                        <div class="body">
+                          <fieldset class="radio-select-wrapper">
+                            <div class="radio-select">
+                              <div class="radio-select-head">
+                                <div class="group">
+                                  <input
+                                    value="Pay with card"
+                                    class="radio"
+                                    type="radio"
+                                    name="payment-method"
+                                    id="with-card"
+                                  />
+                                  <label for="with-card"> Pay with card </label>
+                                </div>
+                                <img
+                                  src="/public/checkout/cards.svg"
+                                  alt=""
+                                  class="cards-icon"
+                                />
+                              </div>
+                              <div class="radio-select-body">
+                                <div class="input-moving-placeholder">
+                                  <div class="input-wrapper">
+                                    <input type="text" />
+                                    <span class="placeholder">
+                                      Card number
+                                    </span>
+                                  </div>
+                                </div>
+                                <div class="inputs-moving-placeholder-group">
+                                  <div class="input-moving-placeholder">
+                                    <div class="input-wrapper">
+                                      <input type="text" />
+                                      <span class="placeholder">
+                                        Expiration Date
+                                      </span>
+                                    </div>
+                                  </div>
+                                  <div class="input-moving-placeholder">
+                                    <div class="input-wrapper">
+                                      <input type="text" />
+                                      <span class="placeholder">
+                                        Security Code
+                                      </span>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="inputs-moving-placeholder-group">
+                                  <div class="input-moving-placeholder">
+                                    <div class="input-wrapper">
+                                      <input type="text" />
+                                      <span class="placeholder"> Country </span>
+                                    </div>
+                                  </div>
+                                  <div class="input-moving-placeholder">
+                                    <div class="input-wrapper">
+                                      <input type="text" />
+                                      <span class="placeholder">
+                                        Postal Code
+                                      </span>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="radio-select checked">
+                              <div class="radio-select-head">
+                                <div class="group">
+                                  <input
+                                    checked
+                                    value="PayPal"
+                                    class="radio"
+                                    type="radio"
+                                    name="payment-method"
+                                    id="paypal"
+                                  />
+                                  <label for="paypal"> PayPal </label>
+                                </div>
+                                <img
+                                  src="/public/checkout/paypal.svg"
+                                  alt=""
+                                  class="paypal-icon"
+                                />
+                              </div>
+                            </div>
+                            <div class="radio-select">
+                              <div class="radio-select-head">
+                                <div class="group">
+                                  <input
+                                    value="ApplePay"
+                                    class="radio"
+                                    type="radio"
+                                    name="payment-method"
+                                    id="appleplay"
+                                  />
+                                  <label for="appleplay"> ApplePay </label>
+                                </div>
+                                <img
+                                  src="/public/checkout/applepay.svg"
+                                  alt=""
+                                  class="applypay-icon"
+                                />
+                              </div>
+                            </div>
+                          </fieldset>
+                        </div>
+                      </div>
+                      <!-- Billing address -->
+                      <div class="checkout-field-group secondary">
+                        <div class="head">
+                          <p class="text-24 weight-600">Billing Address</p>
+                        </div>
+                        <p class="label">
+                          Select the address that matches your card or payment
+                          method
+                        </p>
+                        <div class="body">
+                          <fieldset class="radio-select-wrapper">
+                            <div class="radio-select checked">
+                              <div class="radio-select-head">
+                                <div class="group">
+                                  <input
+                                    checked
+                                    value="Same as shipping address"
+                                    class="radio"
+                                    type="radio"
+                                    name="billing-address"
+                                    id="same-as-shipping"
+                                  />
+                                  <label for="same-as-shipping">
+                                    Same as shipping address
+                                  </label>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="radio-select">
+                              <div class="radio-select-head">
+                                <div class="group">
+                                  <input
+                                    value="Use a different billing address"
+                                    class="radio"
+                                    type="radio"
+                                    name="billing-address"
+                                    id="different-billing"
+                                  />
+                                  <label for="different-billing">
+                                    Use a different billing address
+                                  </label>
+                                </div>
+                              </div>
+                              <div class="radio-select-body">
+                                <div class="inputs-moving-placeholder-group">
+                                  <div class="input-moving-placeholder">
+                                    <div class="input-wrapper">
+                                      <input type="text" />
+                                      <span class="placeholder">
+                                        First name
+                                      </span>
+                                    </div>
+                                  </div>
+                                  <div class="input-moving-placeholder">
+                                    <div class="input-wrapper">
+                                      <input type="text" />
+                                      <span class="placeholder">
+                                        Last name
+                                      </span>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="input-moving-placeholder">
+                                  <div class="input-wrapper">
+                                    <input type="text" />
+                                    <span class="placeholder">
+                                      Company (optional)
+                                    </span>
+                                  </div>
+                                </div>
+                                <div class="input-moving-placeholder">
+                                  <div class="input-wrapper">
+                                    <input type="text" />
+                                    <span class="placeholder">
+                                      Apartment, suite, etc. (optional)
+                                    </span>
+                                  </div>
+                                </div>
+                                <div class="input-moving-placeholder">
+                                  <div class="input-wrapper">
+                                    <input type="text" />
+                                    <span class="placeholder"> City </span>
+                                  </div>
+                                </div>
+                                <div class="inputs-moving-placeholder-group">
+                                  <div class="input-moving-placeholder">
+                                    <div class="input-wrapper">
+                                      <input type="text" />
+                                      <span class="placeholder"> Country </span>
+                                    </div>
+                                  </div>
+                                  <div class="input-moving-placeholder">
+                                    <div class="input-wrapper">
+                                      <input type="text" />
+                                      <span class="placeholder">
+                                        Province
+                                      </span>
+                                    </div>
+                                  </div>
+                                  <div class="input-moving-placeholder">
+                                    <div class="input-wrapper">
+                                      <input type="text" />
+                                      <span class="placeholder">
+                                        ZIP code
+                                      </span>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </fieldset>
+                        </div>
+                        <p class="label">
+                          Your personal data will be used to process your order,
+                          support your experience throughout this website, and
+                          for other purposes described in our
+                          <a
+                            href="https://luaper.com/privacy-policy-2/"
+                            class="link-underlined"
+                          >
+                            privacy policy.
+                          </a>
+                        </p>
+                      </div>
+                      <!-- buttons -->
+                      <div class="checkout-buttons">
+                        <button
+                          id="to-stage-one"
+                          class="button boarded normal-case"
+                        >
+                          <img src="/public/black-arrow-left.svg" alt="" />
+                          Return to Shipping
+                        </button>
+                        <button class="button primary normal-case">
+                          Place Order
+                          <img src="/public/cart-white.svg" alt="" />
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="checkout-summary">
+                <div class="head">
+                  <p class="text-28 weight-600">Cart Summary</p>
+                  <img
+                    src="/public/purple-arrow-down.svg"
+                    alt=""
+                    class="checkout-summary-arrow"
+                  />
+                </div>
+                <div class="checkout-summary-order-previews active">
+                  <div class="order-photo">
+                    <img src="/public/modal-cart/1.png" alt="" />
+                  </div>
+                  <div class="order-photo">
+                    <img src="/public/modal-cart/1.png" alt="" />
+                  </div>
+                  <div class="order-photo">
+                    <img src="/public/modal-cart/1.png" alt="" />
+                  </div>
+                  <div class="order-photo">
+                    <img src="/public/modal-cart/1.png" alt="" />
+                  </div>
+                  <div class="order-photo">
+                    <img src="/public/modal-cart/1.png" alt="" />
+                  </div>
+                  <div class="order-photo bordered">
+                    <span class="text-18 weight-500"> +2 </span>
+                  </div>
+                </div>
+                <div class="checkout-summary-orders-list" style="height: 0px">
+                  <div class="product-summary-item with-discount">
+                    <div class="group">
+                      <div class="order-photo">
+                        <img src="/public/modal-cart/1.png" alt="" />
+                      </div>
+                      <div class="info">
+                        <p class="text-20 weight-500 summary-order-item-title">
+                          Flame Air Diffuser Volcano – Ultrasonic Oil Aroma
+                          Diffuser, 560ml Large Capacity, Auto Shut-off
+                          Protection, Ideal for Home, Office, Yoga or Gym –
+                          V21-B
+                        </p>
+                        <span> 1x </span>
+                      </div>
+                    </div>
+                    <div class="price">
+                      <p class="text-20 weight-500">$49,00</p>
+                      <span class="text-18"> $66,00 </span>
+                    </div>
+                  </div>
+                  <div class="product-summary-item">
+                    <div class="group">
+                      <div class="order-photo">
+                        <img src="/public/modal-cart/1.png" alt="" />
+                      </div>
+                      <div class="info">
+                        <p class="text-20 weight-500 summary-order-item-title">
+                          Flame Air Diffuser Volcano – Ultrasonic Oil Aroma
+                          Diffuser, 560ml Large Capacity, Auto Shut-off
+                          Protection, Ideal for Home, Office, Yoga or Gym –
+                          V21-B
+                        </p>
+                        <span> 1x </span>
+                      </div>
+                    </div>
+                    <div class="price">
+                      <p class="text-20 weight-500">$49,00</p>
+                      <span class="text-18"> $66,00 </span>
+                    </div>
+                  </div>
+                </div>
+                <div class="checkout-summary-add-coupon weight-500 text-18">
+                  Add a coupon
+                </div>
+                <div class="subtotal">
+                  <p class="text-20 weight-500">Subtotal</p>
+                  <p class="text-20 weight-500">$150,00</p>
+                </div>
+                <div class="shipping">
+                  <p class="text-20 weight-500">Shipping</p>
+                  <p class="text-20 weight-500">$5,00</p>
+                </div>
+                <div class="total">
+                  <p class="text-28 weight-600">Total</p>
+                  <p class="text-28 weight-600">$155,00</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div data-mobile-hidden="true" class="space"></div>
+          <footer class="footer">
+            <div class="container">
+              <h2 class="weight-600">
+                Subscribe to get information about <br />
+                products and coupons
+              </h2>
+              <div class="footer-content">
+                <div class="footer-contact">
+                  <form class="subscribe-form">
+                    <input
+                      type="email"
+                      class="text-24"
+                      name=""
+                      placeholder="Email"
+                      id="email"
+                    />
+                    <button class="button secondary">Subscribe</button>
+                  </form>
+                  <p class="text-18">
+                    By submitting your email address, you agree to receive
+                    marketing emails from LuaPer, and accept our terms &
+                    conditions and privacy policy.
+                  </p>
+                  <ul class="footer-socials">
+                    <li class="social">
+                      <a href="">
+                        <img src="/public/socials/1.svg" alt="" />
+                      </a>
+                    </li>
+                    <li class="social">
+                      <a href="">
+                        <img src="/public/socials/2.svg" alt="" />
+                      </a>
+                    </li>
+                    <li class="social">
+                      <a href="">
+                        <img src="/public/socials/3.svg" alt="" />
+                      </a>
+                    </li>
+                    <li class="social">
+                      <a href="">
+                        <img src="/public/socials/4.svg" alt="" />
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="footer-links">
+                  <div class="footer-col">
+                    <span class="text-14">Contact us</span>
+                    <a href="" class="text-18 weight-500">9450 SW Gemini Dr</a>
+                    <a href="" class="text-18 weight-500">PMB 35329</a>
+                    <a href="" class="text-18 weight-500"
+                      >Beaverton, Oregon 97008-7105 US</a
+                    >
+                    <a
+                      href="mailto:support@luaper.com"
+                      class="text-18 weight-500"
+                      >support@luaper.com</a
+                    >
+                  </div>
+                  <div class="footer-col">
+                    <span class="text-14">Quick Links</span>
+                    <a href="" class="text-18 weight-500"
+                      >Refund and Returns Policy</a
+                    >
+                    <a href="" class="text-18 weight-500">Term & Conditions</a>
+                    <a href="" class="text-18 weight-500">Privacy Policy</a>
+                    <a href="" class="text-18 weight-500">FAQs</a>
+                  </div>
+                  <div class="footer-col">
+                    <span class="text-14">Company</span>
+                    <a href="" class="text-18 weight-500">About Us</a>
+                    <a href="" class="text-18 weight-500">Contact</a>
+                  </div>
+                  <div class="footer-col">
+                    <span class="text-14">Bussiness</span>
+                    <a href="" class="text-18 weight-500">Our Press</a>
+                    <a href="" class="text-18 weight-500">Checkout</a>
+                    <a href="" class="text-18 weight-500">My account</a>
+                    <a href="" class="text-18 weight-500">Shop</a>
+                  </div>
+                </div>
+              </div>
+              <div class="footer-payment">
+                <img src="/public/payment/1.svg" alt="" class="icon" />
+                <img src="/public/payment/2.svg" alt="" class="icon" />
+                <img src="/public/payment/3.svg" alt="" class="icon" />
+                <img src="/public/payment/4.svg" alt="" class="icon" />
+                <img src="/public/payment/5.svg" alt="" class="icon" />
+                <img src="/public/payment/6.svg" alt="" class="icon" />
+                <img src="/public/payment/7.svg" alt="" class="icon" />
+                <img src="/public/payment/8.svg" alt="" class="icon" />
+                <img src="/public/payment/9.svg" alt="" class="icon" />
+              </div>
+              <p class="text-20 text-center w-full">
+                © 2023 Lua Per. All rights reserved.
+              </p>
+            </div>
+          </footer>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script type="text/javascript">
+    window.currentPage = 'checkout'
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/matter-js@0.19.0/build/matter.min.js"></script>
+  <script type="module" src="main.js"></script>
+</html>

@@ -1,0 +1,67 @@
+.text-center {
+  text-align: center;
+}
+
+.opacity-0 {
+  opacity: 0;
+}
+
+.relative {
+  position: relative;
+}
+
+.text-black {
+  color: #000;
+}
+
+.text-white {
+  color: #fff;
+}
+
+.text-blue {
+  color: #2f8eff;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.normal-case {
+  text-transform: initial !important;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.items-center {
+  align-items: center;
+
+  &.important {
+    align-items: center !important;
+  }
+}
+
+.items-start {
+  align-items: start;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.gap-8 {
+  gap: 0.463vw;
+}

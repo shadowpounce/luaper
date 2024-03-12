@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/src/styles/index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <title>Home</title>
+  </head>
+  <body>
+    <div class="overlay" id="add-payment-modal-overlay"></div>
+    <div id="add-payment-modal" class="modal">
+      <div class="modal-head">
+        <p class="label">Add Payment Method</p>
+        <div class="cross-button"></div>
+      </div>
+      <div class="modal-body">
+        <div class="add-payment-modal-content">
+          <fieldset class="radio-select-wrapper">
+            <div class="radio-select">
+              <div class="radio-select-head">
+                <div class="group">
+                  <input
+                    value="Pay with card"
+                    class="radio"
+                    type="radio"
+                    name="payment-method"
+                    id="with-card"
+                  />
+                  <label for="with-card"> Pay with card </label>
+                </div>
+                <img
+                  src="/public/checkout/cards.svg"
+                  alt=""
+                  class="cards-icon"
+                />
+              </div>
+              <div class="radio-select-body">
+                <div class="input-moving-placeholder">
+                  <div class="input-wrapper">
+                    <input type="text" />
+                    <span class="placeholder"> Card number </span>
+                  </div>
+                </div>
+                <div class="inputs-moving-placeholder-group">
+                  <div class="input-moving-placeholder">
+                    <div class="input-wrapper">
+                      <input type="text" />
+                      <span class="placeholder"> Expiration Date </span>
+                    </div>
+                  </div>
+                  <div class="input-moving-placeholder">
+                    <div class="input-wrapper">
+                      <input type="text" />
+                      <span class="placeholder"> Security Code </span>
+                    </div>
+                  </div>
+                </div>
+                <div class="inputs-moving-placeholder-group">
+                  <div class="input-moving-placeholder">
+                    <div class="input-wrapper">
+                      <input type="text" />
+                      <span class="placeholder"> Country </span>
+                    </div>
+                  </div>
+                  <div class="input-moving-placeholder">
+                    <div class="input-wrapper">
+                      <input type="text" />
+                      <span class="placeholder"> Postal Code </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="radio-select checked">
+              <div class="radio-select-head">
+                <div class="group">
+                  <input
+                    checked
+                    value="PayPal"
+                    class="radio"
+                    type="radio"
+                    name="payment-method"
+                    id="paypal"
+                  />
+                  <label for="paypal"> PayPal </label>
+                </div>
+                <img
+                  src="/public/checkout/paypal.svg"
+                  alt=""
+                  class="paypal-icon"
+                />
+              </div>
+            </div>
+            <div class="radio-select">
+              <div class="radio-select-head">
+                <div class="group">
+                  <input
+                    value="ApplePay"
+                    class="radio"
+                    type="radio"
+                    name="payment-method"
+                    id="appleplay"
+                  />
+                  <label for="appleplay"> ApplePay </label>
+                </div>
+                <img
+                  src="/public/checkout/applepay.svg"
+                  alt=""
+                  class="applypay-icon"
+                />
+              </div>
+            </div>
+          </fieldset>
+          <button class="button primary add-payment-modal-close">
+            add payment method
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="home">
+      <div class="fixed-nav">
+        <div class="ticker" data-speed="1" data-direction="right">
+          <div id="ticker-first" class="ticker__list">
+            <div>
+              <div class="ticker-item text-13">
+                Free delivery for all orders over $99
+                <img src="/public/delivery.svg" alt="" />
+              </div>
+            </div>
+
+            <div>
+              <div class="ticker-item text-13">
+                Free delivery for all orders over $99
+                <img src="/public/delivery.svg" alt="" />
+              </div>
+            </div>
+
+            <div>
+              <div class="ticker-item text-13">
+                Free delivery for all orders over $99
+                <img src="/public/delivery.svg" alt="" />
+              </div>
+            </div>
+
+            <div>
+              <div class="ticker-item text-13">
+                Free delivery for all orders over $99
+                <img src="/public/delivery.svg" alt="" />
+              </div>
+            </div>
+
+            <div>
+              <div class="ticker-item text-13">
+                Free delivery for all orders over $99
+                <img src="/public/delivery.svg" alt="" />
+              </div>
+            </div>
+          </div>
+          <div id="ticker-second" class="ticker__list">
+            <div>
+              <div class="ticker-item text-13">
+                Free delivery for all orders over $99
+                <img src="/public/delivery.svg" alt="" />
+              </div>
+            </div>
+
+            <div>
+              <div class="ticker-item text-13">
+                Free delivery for all orders over $99
+                <img src="/public/delivery.svg" alt="" />
+              </div>
+            </div>
+
+            <div>
+              <div class="ticker-item text-13">
+                Free delivery for all orders over $99
+                <img src="/public/delivery.svg" alt="" />
+              </div>
+            </div>
+
+            <div>
+              <div class="ticker-item text-13">
+                Free delivery for all orders over $99
+                <img src="/public/delivery.svg" alt="" />
+              </div>
+            </div>
+
+            <div>
+              <div class="ticker-item text-13">
+                Free delivery for all orders over $99
+                <img src="/public/delivery.svg" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <header class="header">
+          <a href="" class="header-logo">
+            <img src="/public/logo.svg" alt="" />
+          </a>
+          <ul class="header-links">
+            <li class="text-20 header-link">
+              <a href="/"> Home </a>
+            </li>
+            <li class="text-20 header-link">
+              <a href="/"> Shop </a>
+            </li>
+            <li class="text-20 header-link">
+              <a href="/"> Contact </a>
+            </li>
+          </ul>
+          <div class="header-panel">
+            <div class="input">
+              <img src="/public/search.svg" alt="" class="input-icon" />
+              <input
+                placeholder="I'm shopping for"
+                class="text-18 grey-text weight-400"
+                type="text"
+              />
+            </div>
+            <div class="icon-button">
+              <img src="/public/heart.svg" alt="" />
+            </div>
+            <div class="icon-button">
+              <img src="/public/notification.svg" alt="" />
+              <div class="icon-button__circle"></div>
+            </div>
+            <div class="icon-button modal-cart-button">
+              <img src="/public/cart.svg" alt="" />
+            </div>
+            <img
+              class="circle-64"
+              src="/public/layout/header/circle.png"
+              alt=""
+            />
+            <a href="" class="text-18 grey-text weight-600"> Log in </a>
+          </div>
+        </header>
+      </div>
+      <div class="modal-cart-overlay"></div>
+      <div class="modal-cart">
+        <div class="modal-cart-head">
+          <span class="label text-32 weight-600"> Your Cart - 3 </span>
+          <div class="cross-button modal-cart-cross-button"></div>
+        </div>
+        <div class="modal-cart-free-shipping">
+          <p class="text-18">You're $37.30 away from free shipping!</p>
+          <div class="progress">
+            <div style="width: 75%"></div>
+          </div>
+        </div>
+        <div class="modal-cart-body">
+          <div class="orders">
+            <div class="order">
+              <img src="/public/modal-cart/cross.svg" alt="" class="cross" />
+              <div class="group">
+                <div class="photo">
+                  <img src="/public/modal-cart/1.png" alt="" />
+                </div>
+                <div class="info">
+                  <p class="text-20 weight-500 modal-cart-order-title">
+                    Flame Air Diffuser Volcano – Ultrasonic Oil Aroma Diffuser,
+                    560ml Large Capacity, Auto Shut-off Protection, Ideal for
+                    Home, Office, Yoga or Gym – V21-B
+                  </p>
+                  <div class="amount product-amount">
+                    <div class="btn subtract disabled">
+                      <div></div>
+                    </div>
+                    <span class="text-22"> 2 </span>
+                    <div class="btn add">
+                      <div></div>
+                      <div></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="order-price with-discount">
+                <p class="text-20 weight-500">$49,00</p>
+                <span class="text-18"> $66,00 </span>
+              </div>
+            </div>
+            <div class="order">
+              <img src="/public/modal-cart/cross.svg" alt="" class="cross" />
+              <div class="group">
+                <div class="photo">
+                  <img src="/public/modal-cart/1.png" alt="" />
+                </div>
+                <div class="info">
+                  <p class="text-20 weight-500 modal-cart-order-title">
+                    Flame Air Diffuser Volcano – Ultrasonic Oil Aroma Diffuser,
+                    560ml Large Capacity, Auto Shut-off Protection, Ideal for
+                    Home, Office, Yoga or Gym – V21-B
+                  </p>
+                  <div class="amount product-amount">
+                    <div class="btn subtract disabled">
+                      <div></div>
+                    </div>
+                    <span class="text-22"> 2 </span>
+                    <div class="btn add">
+                      <div></div>
+                      <div></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="order-price">
+                <p class="text-20 weight-500">$49,00</p>
+                <span class="text-18"> $66,00 </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-cart-bottom">
+          <div class="flex items-center w-full justify-between">
+            <span class="text-20 weight-600"> Subtotal: </span>
+            <span class="text-20 weight-500"> $150,00 </span>
+          </div>
+          <div class="flex items-center w-full justify-between buttons">
+            <button class="button boarded">Review Full Cart</button>
+            <button class="button primary">
+              Check Out Now
+              <img src="/public/cart-white.svg" alt="" />
+            </button>
+          </div>
+        </div>
+      </div>
+      <div id="smooth-wrapper">
+        <div id="smooth-content">
+          <div class="space"></div>
+          <div class="dashboard">
+            <div class="container dashboard-container">
+              <div class="breadcrumbs">
+                <a
+                  href="/"
+                  class="grey-light-secondary-text text-18 weight-500"
+                >
+                  Home / Profile /
+                </a>
+                <a href="" class="weight-500 text-18"> Dashboard </a>
+              </div>
+              <div class="dashboard-layout">
+                <div class="dashboard-side">
+                  <p class="text-48 weight-700 dashboard-side-label">
+                    My Profile
+                  </p>
+                  <div class="dashboard-side-profile">
+                    <div class="info">
+                      <img src="/public/avatar.png" alt="" class="avatar" />
+                      <a href="" class="btn-link">
+                        <img class="icon" src="/public/pen-edit.svg" alt="" />
+                        Edit profile
+                      </a>
+                      <div class="group">
+                        <p class="text-28 weight-600">Madison Ruiz</p>
+                        <p class="text-18">example@gmail.com</p>
+                        <p class="phone text-18">
+                          <img src="/public/call.svg" alt="" class="icon" />
+                          (518) 573-4201
+                        </p>
+                      </div>
+                    </div>
+                    <a href="" class="btn-link">
+                      <img src="/public/logout.svg" alt="" class="icon" />
+                      Log out</a
+                    >
+                  </div>
+                </div>
+                <div class="dashboard-main">
+                  <div class="page-tabs">
+                    <div class="page-tab">
+                      <img src="/public/chart.svg" alt="" class="icon" />
+                      Dashboard
+                    </div>
+                    <div class="page-tab">
+                      <img src="/public/address.svg" alt="" class="icon" />
+                      Address
+                    </div>
+                    <div class="page-tab active">
+                      <img
+                        src="/public/payment-method.svg"
+                        alt=""
+                        class="icon"
+                      />
+                      Payment methods
+                    </div>
+                    <div class="page-tab">
+                      <img src="/public/download.svg" alt="" class="icon" />
+                      Downloads
+                    </div>
+                    <div class="page-tab">
+                      <img src="/public/cart-check.svg" alt="" class="icon" />
+                      Orders
+                    </div>
+                  </div>
+                  <div class="dashboard-main-content">
+                    <div class="dashboard-main-content-block">
+                      <div class="dashboard-main-content-frame">
+                        <div class="dashboard-payment-methods">
+                          <div class="head">
+                            <span> Method </span>
+                            <span> Expires </span>
+                            <span> Actions </span>
+                          </div>
+                          <div class="list">
+                            <div class="list-item">
+                              <div class="row">
+                                <img
+                                  src="/public/payment/9.svg"
+                                  class="card-icon"
+                                  alt=""
+                                />
+                                <span class="text-18"> ending in 4441 </span>
+                              </div>
+                              <span class="text-18"> 9 May 2023 </span>
+                              <div class="row">
+                                <button class="button primary">Delete</button>
+                                <button class="button primary">
+                                  Make default
+                                </button>
+                              </div>
+                            </div>
+                            <div class="list-item">
+                              <div class="row">
+                                <img
+                                  src="/public/payment/9.svg"
+                                  class="card-icon"
+                                  alt=""
+                                />
+                                <span class="text-18"> ending in 4441 </span>
+                              </div>
+                              <span class="text-18"> 9 May 2023 </span>
+                              <div class="row">
+                                <button class="button primary">Delete</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <button id="add-payment-button" class="button primary">
+                        Add Payment Method
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="space"></div>
+          <footer class="footer">
+            <div class="container">
+              <h2 class="weight-600">
+                Subscribe to get information about <br />
+                products and coupons
+              </h2>
+              <div class="footer-content">
+                <div class="footer-contact">
+                  <form class="subscribe-form">
+                    <input
+                      type="email"
+                      class="text-24"
+                      name=""
+                      placeholder="Email"
+                      id="email"
+                    />
+                    <button class="button secondary">Subscribe</button>
+                  </form>
+                  <p class="text-18">
+                    By submitting your email address, you agree to receive
+                    marketing emails from LuaPer, and accept our terms &
+                    conditions and privacy policy.
+                  </p>
+                  <ul class="footer-socials">
+                    <li class="social">
+                      <a href="">
+                        <img src="/public/socials/1.svg" alt="" />
+                      </a>
+                    </li>
+                    <li class="social">
+                      <a href="">
+                        <img src="/public/socials/2.svg" alt="" />
+                      </a>
+                    </li>
+                    <li class="social">
+                      <a href="">
+                        <img src="/public/socials/3.svg" alt="" />
+                      </a>
+                    </li>
+                    <li class="social">
+                      <a href="">
+                        <img src="/public/socials/4.svg" alt="" />
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="footer-links">
+                  <div class="footer-col">
+                    <span class="text-14">Contact us</span>
+                    <a href="" class="text-18 weight-500">9450 SW Gemini Dr</a>
+                    <a href="" class="text-18 weight-500">PMB 35329</a>
+                    <a href="" class="text-18 weight-500"
+                      >Beaverton, Oregon 97008-7105 US</a
+                    >
+                    <a
+                      href="mailto:support@luaper.com"
+                      class="text-18 weight-500"
+                      >support@luaper.com</a
+                    >
+                  </div>
+                  <div class="footer-col">
+                    <span class="text-14">Quick Links</span>
+                    <a href="" class="text-18 weight-500"
+                      >Refund and Returns Policy</a
+                    >
+                    <a href="" class="text-18 weight-500">Term & Conditions</a>
+                    <a href="" class="text-18 weight-500">Privacy Policy</a>
+                    <a href="" class="text-18 weight-500">FAQs</a>
+                  </div>
+                  <div class="footer-col">
+                    <span class="text-14">Company</span>
+                    <a href="" class="text-18 weight-500">About Us</a>
+                    <a href="" class="text-18 weight-500">Contact</a>
+                  </div>
+                  <div class="footer-col">
+                    <span class="text-14">Bussiness</span>
+                    <a href="" class="text-18 weight-500">Our Press</a>
+                    <a href="" class="text-18 weight-500">Checkout</a>
+                    <a href="" class="text-18 weight-500">My account</a>
+                    <a href="" class="text-18 weight-500">Shop</a>
+                  </div>
+                </div>
+              </div>
+              <div class="footer-payment">
+                <img src="/public/payment/1.svg" alt="" class="icon" />
+                <img src="/public/payment/2.svg" alt="" class="icon" />
+                <img src="/public/payment/3.svg" alt="" class="icon" />
+                <img src="/public/payment/4.svg" alt="" class="icon" />
+                <img src="/public/payment/5.svg" alt="" class="icon" />
+                <img src="/public/payment/6.svg" alt="" class="icon" />
+                <img src="/public/payment/7.svg" alt="" class="icon" />
+                <img src="/public/payment/8.svg" alt="" class="icon" />
+                <img src="/public/payment/9.svg" alt="" class="icon" />
+              </div>
+              <p class="text-20 text-center w-full">
+                © 2023 Lua Per. All rights reserved.
+              </p>
+            </div>
+          </footer>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script type="text/javascript">
+    window.currentPage = 'payment-methods'
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/matter-js@0.19.0/build/matter.min.js"></script>
+  <script type="module" src="main.js"></script>
+</html>
